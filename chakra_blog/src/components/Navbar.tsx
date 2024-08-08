@@ -13,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="sticky z-50 top-0 inset-x-2 h-20 shadow-lg  w-full bg-white-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20">
+    <div className="snap-start sticky z-50 top-0 inset-x-2 h-20 shadow-lg  w-full bg-white-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20">
       <header className="relatiive ">
         <MaxWidthWrapper>
           <div className="pt-2">
