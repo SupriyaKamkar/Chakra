@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Merienda } from "next/font/google";
+import { Merienda, Decovar } from "next/font/google";
 import MultiLayerParallax from "@/components/MultiLayerParallax";
 import NavBar from "@/components/Navbar";
 import WavyText from "@/components/WavyText";
@@ -11,6 +11,7 @@ import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import { CircularImageGallery } from "@/components/CircularImageGallery";
 import ThreeDCarousel from "@/components/ThreeDCarousel";
 import About from "@/components/About";
+import VineCircle from "@/components/VineCircle";
 
 const inter = Merienda({ subsets: ["latin"] });
 
@@ -64,7 +65,12 @@ export default function Home() {
                   transition={{ ease: "easeIn", duration: 4 }}
                   className=" w-full h-full flex justify-center rounded-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 overflow-hidden shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#010f,0_0_15px_#010f,0_0_30px_#010f]"
                 >
-                  <motion.h1 className="text-6xl mt-20  md:text-7xl md:mt-8 relative z-10 animated-background bg-gradient-to-r from-teal-700 via-cyan-500  to-teal-700 text-transparent  bg-clip-text font-extrabold  text-center select-auto ">
+                  <motion.h1 className="chakraFont text-6xl mt-20  md:text-7xl md:mt-8 relative z-10 
+                   
+                   text-center select-auto ">
+                     {/* <motion.h1 className="chakraFont text-6xl mt-20  md:text-7xl md:mt-8 relative z-10 
+                   animated-background bg-gradient-to-r from-teal-700 via-cyan-500  to-teal-700 text-transparent  bg-clip-text font-extrabold 
+                   text-center select-auto "> */}
                     CHAKRA
                   </motion.h1>
                   <FontAwesomeIcon
@@ -139,9 +145,10 @@ export default function Home() {
                 </motion.div>
               </div>
             </div>
-            <div className="h-full w-full p-6 snap-always snap-center">
+            <div className="h-full w-full p-6 snap-always snap-center grid">
               {/* <ThreeDCarousel></ThreeDCarousel> */}
               <About></About>
+              {/* <VineCircle></VineCircle> */}
             </div>
           </div>
           {/* <div className="w-full bg-transparent">
